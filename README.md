@@ -18,6 +18,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
+- Javascript
 
 ## 💻 Projeto
 O desafio proposto pela Codelândia, tinha como objetivo principal montar uma página inicial de um blog.
