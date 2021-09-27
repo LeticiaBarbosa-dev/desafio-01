@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">
-    <img style="width: 500px;" alt="Desafio 1" src="images/Home.PNG"/>
+    <img style="width: 500px;" alt="Desafio 1" src="images/Blog.png"/>
 </h1>
 
 <br>
