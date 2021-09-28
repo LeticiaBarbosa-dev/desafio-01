@@ -31,30 +31,30 @@ body::-webkit-scrollbar-thumb {
 .nav-header {
   background: var(--color-bg-header);
   width: 100%;
-  font-weight: 400;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px; /*REVISAR*/
+  margin-bottom: 100px;
 }
 
 .container-header {
-  width: 640px;
+  width: 900px;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 41px;
+  margin-bottom: 73px;
 }
 
 /*Barra de pesquisa*/
 .form {
   background: var(--color-bg-search-bar);
-  width: 640px;
-  height: 40px;
-  margin-bottom: 30px;
+  width: 900px;
+  height: 65px;
+  margin-bottom: 41px;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -63,14 +63,15 @@ body::-webkit-scrollbar-thumb {
 .inputSearch {
   background: transparent;
   width: 755px;
-  height: 40px;
+  height: 60px;
   border: 0;
   outline: 0;
 }
 
 .inputSearch::placeholder {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 22px;
   opacity: 0.5;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -78,8 +79,10 @@ body::-webkit-scrollbar-thumb {
 
 /*Icone da barra de pesquisa*/
 .fa-search {
-  margin-left: 10px;
-  margin-right: 10px;
+  height: 18px;
+  width: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*Noticias*/
@@ -91,9 +94,10 @@ body::-webkit-scrollbar-thumb {
 
 .noticia-container {
   background: #ffffff;
-  width: 600px;
-  margin-bottom: 35px;
-  padding: 20px;
+  width: 850px;
+  height: inherit;
+  margin-bottom: 50px;
+  padding: 23px 25px 25px 25px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
 }
@@ -101,11 +105,12 @@ body::-webkit-scrollbar-thumb {
 .date-like {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
 
 .date {
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 20px;
   color: #b6b6b6;
 }
 
@@ -115,13 +120,15 @@ body::-webkit-scrollbar-thumb {
 
 .title-noticia {
   color: var(--color-title-noticia);
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 .text-noticia {
   color: var(--color-text-noticia);
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 /*Responsividade*/
@@ -129,76 +136,99 @@ body::-webkit-scrollbar-thumb {
 
   /*Header*/
   .container-header {
-    width: 400px;
+    width: 600px;
   }
 
   .form {
     background: var(--color-bg-search-bar);
-    width: 400px;
-    height: 40px;
+    width: 600px;
   }
 
   .inputSearch {
-    width: 455px;
+    width: 540px;
   }
 
   /*Content*/
   .noticia-container {
-    width: 360px;
+    width: 550px;
   }
 }
 
 @media screen and (max-width: 425px) {
   /*Header*/
+  .nav-header {
+    margin-bottom: 50px;
+  }
   .container-header {
-    width: 400px;
+    width: 374px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 48px;
+    margin-bottom: 41px;
   }
 
   .form {
     background: var(--color-bg-search-bar);
-    width: 400px;
-    height: 30px;
+    width: 374px;
+    height: 40px;
   }
 
   .inputSearch {
-    width: 365px;
-    height: 30px;
+    width: 315px;
+    height: 40px;
   }
 
   .inputSearch::placeholder {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   /*Content*/
   .noticia-container {
+    padding: 16px;
     width: 360px;
+    margin-bottom: 25px;
+  }
+
+  .date-like {
+    margin-bottom: 27px;
+  }
+  
+  .date {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .title-noticia {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 9px;
+  }
+  
+  .text-noticia {
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
 @media screen and (max-width: 375px) {
   /*Header*/
   .container-header {
-    width: 350px;
+    width: 300px;
   }
 
   .form {
     background: var(--color-bg-search-bar);
-    width: 350px;
-    height: 30px;
+    width: 300px;
   }
 
   .inputSearch {
-    width: 315px;
-    height: 30px;
-  }
-
-  .inputSearch::placeholder {
-    font-size: 10px;
+    width: 240px;
   }
 
   /*Content*/
   .noticia-container {
-    width: 310px;
+    width: 268px;
   }
 }
 
